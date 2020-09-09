@@ -6,13 +6,17 @@ import About from '..';
 afterEach(cleanup);
 
 describe('About component', () => {
-    // First Test
+    //renders About test
+    //first test
     it('renders', () => {
-      render(<About />);
+        render(<About />);
     });
-  
+
+    //second test
     it('matches snapshot DOM node structure', () => {
+        //render About
         const { asFragment } = render(<About />);
         expect(asFragment()).toMatchSnapshot();
-      })
-  })
+    })
+
+})
